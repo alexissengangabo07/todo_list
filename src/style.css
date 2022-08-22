@@ -1,1 +1,72 @@
 
+.container {
+    padding: 0 20px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-input {
+    height: 40px;
+    width: 400px;
+    border: 1px solid lightgray;
+    outline: none;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.submit-btn {
+    background-color: rgb(6, 6, 107);
+    color: #fff;
+    border: 1px solid rgb(6, 6, 107);
+    height: 44px;
+    margin-left: -3px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 0 20px;
+    transition: all 1s ease;
+}
+
+.submit-btn:hover {
+    color: rgb(6, 6, 107);
+    background-color: #fff;
+}
+
+.items {
+    margin: -10px 0;
+    list-style: none;
+    margin-left: -35px;
+    background-color: rgba(58, 66, 63, 0.174);
+    width: 480px;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.completed-btn {
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.remove-btn {
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.completed-btn:hover {
+    background-color: darkgreen;
+}
+
+.remove-btn:hover {
+    background-color: darkred;
+}
