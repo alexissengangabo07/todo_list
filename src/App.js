@@ -1,7 +1,8 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 
 import ListItem from "./ListItem";
 import Form from "./Form";
+import './style.css';
 
 //Initial tasks
 const tasks = [
@@ -43,12 +44,13 @@ function TodoApp() {
 
   //
   return (
-    <Fragment>
+    <div className='container'>
       <Form
         onSubmit={_handleSubmit}
         value={inputValue}
         onChange={e => setInputValue(e.target.value)}
       />
+      <h2>Tasks ({todos.length})</h2>
       <ul>
         {todos.map((todo, index) => (
           <ListItem
@@ -59,7 +61,7 @@ function TodoApp() {
           />
         ))}
       </ul>
-    </Fragment>
+    </div>
   );
 }
 
